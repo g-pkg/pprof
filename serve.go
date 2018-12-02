@@ -5,6 +5,7 @@ import (
 	_ "net/http/pprof"
 )
 
+//Serve serve pprof
 func Serve(addr string) error {
 	return http.ListenAndServe(addr, nil)
 }
